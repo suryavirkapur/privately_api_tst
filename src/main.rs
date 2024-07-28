@@ -93,7 +93,7 @@ async fn send_to_api(image_base64: &str) -> Result<serde_json::Value> {
     });
 
     let response = client
-        .post("http://194.182.163.14:8995/ping")
+        .post("http://194..163.14:8995/ping")
         .json(&payload)
         .send()
         .await
